@@ -5,40 +5,53 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap" rel="stylesheet">
 
   <title>Age Calculator</title>
 </head>
 
 <body>
 
-  <div class="">
+ 
     <!-- <h1>Age Calculator</h1> -->
-
-    <form class="top-texts">
-    <label>DAY</label> 
-    <input type="number" placeholder="DD" required>
-      
-    <label>MONTH</label> 
-    <input type="number" placeholder="MM" required>
-        
-    <label>YEAR</label> 
-    <input type="number" placeholder="YYY" required>
+<div class="container">
+<div class="top-section">
+    <form class=day>
+  <label>DAY</label><br>
+    <input   type="number" placeholder="DD" required>
     </form>
+   <form class="month">
+    <label>MONTH</label><br>
+    <input  Value="MONTH"  type="number" placeholder="MM" required>
+  </form>
+      <form class="year">
+    <label>YEAR</label><br>
+    <strong><input type="number" placeholder="YYY" required></strong>
+    </form>
+  </div>
+ 
 
     <br>
-      <hr>  
+      <!-- <hr>   -->
       <br>  
-      <!-- <img src="age-calculator-app-main/assets/images/icon-arrow.svg" alt="icon arrow">  -->
+      <button><img src="age-calculator-app-main/assets/images/icon-arrow.svg" alt="icon arrow"></button> 
 
-    <form>
+    <form class="result">
     <!-- <h1> <b> <i>- -years</b> </i> </h1>
     <h1> <b> <i>- - months</b> </i> </h1>
     <h1> <b> <i>- - days <b> </i> </h1> -->
 
-      <h1> <b>  - - years</b> <br> <b>- - months </b> <br> <b>- - days</b> </h1>
+      <h1>
+         <strong>  <span>- -</span> years</strong> <br>
+         <strong> <span>- -</span> months </strong> <br>
+          <b> <strong> <span>- -</span> days</strong> 
+          </h1>
   </form>
 
-  </div>   
+</div>  
+   
   
   <script src="app.js"></script>
 </body>
