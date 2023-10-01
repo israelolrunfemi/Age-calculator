@@ -105,11 +105,8 @@ button{
   border: none;
   border-radius: 50%;
   position: absolute;
-  right: 70px;
-  /* left: 70px; */
-  top: 170px;
-  bottom: 60px;
-
+  right: 40em;
+  top: 15em;
 
 
 }
@@ -123,19 +120,15 @@ button:hover{
   background-color: hsl(0, 0%, 8%);
   cursor:grab
 }
-/* @media(max-width:760px){
-  input{
-    width:80%;
-  }
-}
-output span{
-  font-size: 1.75rem;
-}
-button{
-  width:40px;
-  height:40px;
-  right: 40%;
-  top: 90px  ;
-}
+@media(max-width:375px){
+ 
 
- */
+ 
+ }
+ small{
+  color: hsl(0, 100%, 67%);
+  font-size: 10px;
+  font-weight: 400;
+  display:none ;
+  margin-top: 0;
+ }

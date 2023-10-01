@@ -20,23 +20,27 @@
 <div class="top-section">
     <form class=day>
   <label>DAY</label><br>
-    <input   type="number" placeholder="DD" required>
+    <input class="errorcolor"  type="number" placeholder="DD" required>
+    <small class="errormessage1">This field is required</small>
     </form>
+ 
    <form class="month">
     <label>MONTH</label><br>
-    <input  Value="MONTH"  type="number" placeholder="MM" required>
+    <input class="errorcolor" Value="MONTH"  type="number" placeholder="MM" required>
+    <small class="errormessage1">This field is required</small>
   </form>
       <form class="year">
     <label>YEAR</label><br>
-    <strong><input type="number" placeholder="YYY" required></strong>
+    <strong><input class="errorcolor" type="number" placeholder="YYY" required></strong>
+    <small class="errormessage1">This field is required</small>
     </form>
   </div>
  
 
     <br>
-      <hr>  
+      <hr style="background-color: hsl(0, 0%, 94%);">  
       <br>  
-      <button><img src="age-calculator-app-main/assets/images/icon-arrow.svg" alt="icon arrow"></button> 
+      <button onclick="agecal()"><img src="age-calculator-app-main/assets/images/icon-arrow.svg" alt="icon arrow"></button> 
 
     <form class="result">
     <!-- <h1> <b> <i>- -years</b> </i> </h1>
