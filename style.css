@@ -128,7 +128,7 @@ button:hover{
  }
  .errorday,.errormonth,.erroryear{
   color: hsl(0, 100%, 67%);
-  font-size: 10px;
+  font-size: 8px;
   font-weight: 400;
   /* display:none ; */
   margin-top: 0;

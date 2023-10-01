@@ -36,6 +36,28 @@ Inputday.addEventListener("input",(e) =>{
     
 
 })
+Inputmonth.addEventListener("input",(e) =>{
+    if (+Inputmonth.value > 12) {
+        Errormonth.textContent = "Must be a Valid month "
+        isvalid=false
+        return;   
+    } else{
+        isvalid= true
+        Errormonth.textContent = " "
+
+    }
+    if (+Inputmonth.value === 0) {
+        Errormonth.textContent ="This field is required"
+        return;  
+    }else{
+        isvalid=true
+        Errormonth.textContent = "" 
+    }
+    
+
+})
+
+    
 
 
 
