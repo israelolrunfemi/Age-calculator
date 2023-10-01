@@ -20,19 +20,19 @@
 <div class="top-section">
     <form class=day>
   <label>DAY</label><br>
-    <input class="errorcolor"  type="number" placeholder="DD" required>
-    <small class="errormessage1">This field is required</small>
+    <input  type="number" placeholder="DD" required id="day">
+    <small class="errorday"></small>
     </form>
  
    <form class="month">
     <label>MONTH</label><br>
-    <input class="errorcolor" Value="MONTH"  type="number" placeholder="MM" required>
-    <small class="errormessage1">This field is required</small>
+    <input  Value="MONTH"  type="number" placeholder="MM" required id="month">
+    <small class="errormonth"></small>
   </form>
-      <form class="year">
+      <form class="year" >
     <label>YEAR</label><br>
-    <strong><input class="errorcolor" type="number" placeholder="YYY" required></strong>
-    <small class="errormessage1">This field is required</small>
+    <strong><input type="number" placeholder="YYY" required id="year"></strong>
+    <small class="erroryear"></small>
     </form>
   </div>
  
@@ -40,7 +40,7 @@
     <br>
       <hr style="background-color: hsl(0, 0%, 94%);">  
       <br>  
-      <button onclick="agecal()"><img src="age-calculator-app-main/assets/images/icon-arrow.svg" alt="icon arrow"></button> 
+      <button onclick="calculateage()"><img src="age-calculator-app-main/assets/images/icon-arrow.svg" alt="icon arrow"></button> 
 
     <form class="result">
     <!-- <h1> <b> <i>- -years</b> </i> </h1>
@@ -48,13 +48,14 @@
     <h1> <b> <i>- - days <b> </i> </h1> -->
 
       <h1>
-         <strong>  <span>- -</span> years</strong> <br>
-         <strong> <span>- -</span> months </strong> <br>
-          <b> <strong> <span>- -</span> days</strong> 
+         <strong>  <span id="yyy">- -</span> years</strong> <br>
+         <strong> <span id="mm">- -</span> months </strong> <br>
+          <b> <strong> <span id="dd">- -</span> days</strong> 
           </h1>
   </form>
 
 </div>  
+
    
   
   <script src="app.js"></script>

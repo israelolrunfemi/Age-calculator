@@ -1,20 +1,44 @@
-function agecal() {
-    const Day = document.querySelector(".day");
-    const Month = document.querySelector(".month");
-    const Year = document.querySelector(".Year");
-    const result = document.querySelector(".result");
-    const errormessage1 = document.querySelector(".errormessage1");
-    const errorcolor = document.querySelector(".errorcolor");
- 
+
+//OUTPUT
+const Outputyear= document.querySelector("#yyy")
+const Outputmonth= document.querySelector("#mm")
+const Outputday= document.querySelector("#dd")
+// INPUT
+const Inputday = document.querySelector("#day");
+const Inputmonth = document.querySelector("#month");
+const Inputyear = document.querySelector("#year");
+//OUTPUT
 
  
+let isvalid=false
+//ERROR MESSAGE
+const Errorday = document.querySelector(".errorday");
+const Errormonth = document.querySelector(".errormonth");
+const Erroryear = document.querySelector(".erroryear");
+
+Inputday.addEventListener("input",(e) =>{
+    if (+Inputday.value > 31) {
+        Errorday.textContent = "Must be a Valid date "
+        isvalid=false
+        return;   
+    } else{
+        isvalid= true
+        Errorday.textContent = " "
+
+    }
+    if (+Inputday.value === 0) {
+        Errorday.textContent ="This field is required"
+        return;  
+    }else{
+        isvalid=true
+        Errorday.textContent = "" 
+    }
     
 
-if (isNaN(Day) || isNaN(Month) || isNaN(Year) <=0) {
-    errormessage1.style.display="block"
-    // errorcolor.style.color= "red"
-    
+})
 
-    
-}
-}
+
+
+
+
+
