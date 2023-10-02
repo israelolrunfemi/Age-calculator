@@ -81,6 +81,7 @@ input:focus{
 }
  #yyy,#mm,#dd{
   font-size: 32px;
+  size: 32px;
   color: hsl(259, 100%, 65%) ;
   font-style: italic;
   font-weight: 700;
