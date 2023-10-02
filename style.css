@@ -11,12 +11,13 @@ body{
  display:flex;
  justify-content: center;
  align-items: center;
+ max-width:1440px ;
  
 }
 .container{
   background-color:hsl(0, 0%, 94%);
-  width: 420px;
-  max-width: 80%;
+  width:500px;
+  max-width: 50%;
   padding: 30px;
   border-bottom-right-radius: 150px;
   margin-top: 40px;
@@ -105,8 +106,8 @@ button{
   border: none;
   border-radius: 50%;
   position: absolute;
-  right: 40em;
-  top: 15em;
+  right: 36em;
+  top: 17em;
 
 
 }
