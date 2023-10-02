@@ -12,9 +12,11 @@ body{
  justify-content: center;
  align-items: center;
  max-width:1440px ;
+ /* font-size: 32px; */
  
 }
 .container{
+  /* font-size: small; */
   background-color:hsl(0, 0%, 94%);
   width:500px;
   max-width: 50%;
@@ -77,11 +79,12 @@ input:focus{
   font-style: italic;
   
 }
-.result span{
+ #yyy,#mm,#dd{
   font-size: 32px;
   color: hsl(259, 100%, 65%) ;
   font-style: italic;
   font-weight: 700;
+  size:32px;
 
 
 }
