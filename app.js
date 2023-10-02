@@ -103,7 +103,7 @@ function calculateage() {
 
       }
       if(Inputmonth.value > month || Inputday.value > day){ 
-        const d = Inputmonth.value - day
+        const d = Inputday.value - day
         const m = Inputmonth.value - month
 
         Outputday.textContent = d
